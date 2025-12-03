@@ -1,85 +1,84 @@
-# 🧠 MNIST Handwritten Digit Classification
+Audiobook Customer Retention Prediction
+📘 Project Overview
 
-This project builds and evaluates a **machine learning model** for classifying handwritten digits (0–9) using the **MNIST dataset** — one of the most popular benchmarks in computer vision and deep learning.
+This project aims to predict returning customers for a fictitious audiobook company using machine learning. The dataset contains customer interaction and feedback data collected over a 2-year period, with the target variable based on customer behavior six months after the initial dataset.
 
-Each image in the dataset is a 28×28 grayscale pixel representation of a single digit.  
-The goal of this project is to train a model that can accurately recognize these digits from image data.
+The goal is to identify key factors that influence whether a customer is likely to return, helping the company improve retention strategies and personalize marketing efforts.
 
----
+🧠 Objectives
 
-## 📊 Project Overview
+Build a predictive model to classify returning vs. non-returning customers.
 
-The notebook walks through the complete **machine learning workflow**, including:
-- Loading and preprocessing the MNIST dataset  
-- Building and training a neural network model  
-- Evaluating model performance using accuracy and loss metrics  
-- Getting predictions and performance results  
+Analyze customer feedback and engagement patterns over time.
 
-This project demonstrates fundamental deep learning concepts such as **data normalization**, **activation functions**, and **model optimization**.
+Generate insights that can support data-driven retention strategies.
 
----
+📂 Dataset
 
-## 🧩 Key Features
+Source: Fictitious Audiobook Company
 
-- Neural network for multi-class image classification  
-- Model built using **TensorFlow/Keras**  
-- Data normalization and reshaping for efficient training  
-- Visualization of training accuracy and loss  
-- Evaluation using confusion matrix and classification report  
+Timeframe: 2 years of historical data + 6-month target window
 
----
+Features: Customer demographics, purchase history, feedback ratings, and engagement metrics.
 
-## 🧰 Tools & Libraries
+Target: Binary indicator (1 = Returned, 0 = Did not return).
 
-- **Python**  
-- **TensorFlow / Keras**  
-- **NumPy**  
-- **Matplotlib**  
-- **Seaborn**  
-- **Scikit-learn**
+⚙️ Methodology
 
----
+Data Preprocessing
 
-## 📂 Dataset
+Handled missing values and outliers
 
-- **Name:** MNIST Handwritten Digits  
-- **Source:** [Yann LeCun’s MNIST Database](http://yann.lecun.com/exdb/mnist/)  
-- **Size:** 70,000 images (60,000 training (10% of training for validation) + 10,000 testing)  
-- **Format:** Grayscale images of 28×28 pixels each  
+Normalized numerical features
 
----
+Encoded categorical variables
 
-## 🚀 Results
+Extracted behavior-based metrics (e.g., listening frequency, feedback sentiment)
 
-The final model achieves a **high test accuracy** on unseen data, effectively recognizing handwritten digits.  
-Results from epochs show the model’s performance across all 10 digit classes, confirming robust generalization.
+Created temporal features to capture customer lifecycle trends
 
----
+Model Building
 
-## 🧠 Skills Demonstrated
+Split dataset into training, validation, and test sets
 
-- Deep Learning & Neural Networks  
-- Data Preprocessing and Normalization  
-- Model Evaluation and Validation  
-- Python Programming for Machine Learning  
-- Data Visualization and Interpretation  
+Used tensorflow and keras to build a model
 
----
+Evaluated model performance with accuracy
 
-Future Improvements
+Model Evaluation
 
-Experiment with Convolutional Neural Networks (CNNs) for better performance
+Identified the best-performing model for predicting returning customers
 
-Implement hyperparameter tuning
 
-Explore model deployment using Streamlit or Flask
+🧾 Results
 
-🏁 Conclusion
+Achieved strong predictive performance in identifying returning customers. Model achieved an accuracy of 85% on test data.
 
-This project highlights the power of neural networks in image classification tasks and provides a foundational understanding of deep learning workflows.
-It serves as a great starting point for anyone looking to build and deploy their own computer vision models.
+Found that customer feedback scores, engagement duration, and purchase frequency were strong indicators of retention.
 
-🔖 Author
+💡 Insights
+
+Positive feedback and consistent engagement are major predictors of return likelihood.
+
+First 3 months of customer interaction play a critical role in retention.
+
+Personalized follow-ups for customers with moderate satisfaction ratings can improve long-term return rates.
+
+🧰 Tools & Technologies
+
+Language: Python
+
+Libraries: NumPy TensorFlow/Keras
+
+Environment: Jupyter Notebook
+
+Include text sentiment analysis from open-ended customer feedback.
+
+Experiment with more advanced deep learning architectures (e.g., LSTM for time-based behavior).
+
+Deploy the model as an API or dashboard for real-time retention monitoring.
+
+🧑‍💻 Author
 
 Chukwuma Samuel
-📍 Data Analyst | Entry-level Data Scientist
+Data Analyst | Machine Learning Enthusiast
